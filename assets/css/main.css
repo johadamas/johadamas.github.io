@@ -1747,3 +1747,8 @@ input, select, textarea {
 h2 {
     letter-spacing: 6px; /* Adjust the value as needed */
 }
+
+/* Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
