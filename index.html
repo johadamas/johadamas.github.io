@@ -1,0 +1,533 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dimension by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+		<!-- Add this CSS to remove dotted line from button -->
+		<style>
+			button:focus {
+				outline: none;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="content">
+							<div class="inner">
+								<h1>Hi, I'm Jonathan👋</h1>
+								<p>Data Engineering Enthusiast</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#about">About Me</a></li>
+								<li><a href="#portfolio">Portfolio</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<!--<li><a href="#elements">Elements</a></li>-->
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Portfolio -->
+						<article id="portfolio">
+							<h2 class="major">Data Engineering</h2>
+							<div class="slider" id="slider1">
+								<div class="slides">
+									<img src="images/DE1_metabase.gif" alt="Metabase" class="slide">
+									<img src="images/DE1_airflow.png" alt="Airflow DAG" class="slide">
+									<img src="images/DE1_bigquery.png" alt="BigQuery Dataset" class="slide">
+									<img src="images/DE1_dbt_lineage.png" alt="dbt Lineage" class="slide">
+									<img src="images/DE1_architecture.png" alt="Pipeline Architecture" class="slide">
+									<!-- Add more images as needed -->
+								</div>
+								<button class="prev" onclick="plusSlides(-1, 'slider1')">&#10094;</button>
+								<button class="next" onclick="plusSlides(1, 'slider1')">&#10095;</button>
+							</div>
+							<p><b>YouTube Analytics ELT Pipeline with Airflow</b></p>
+							
+							<p style="text-align: justify;">Built an ELT pipeline to extract 9K+ video records via YouTube API, store raw data in GCS, and load it into BigQuery. Transformed data into a star schema with dbt, created a 3-page Metabase dashboard (Overview, Engagement, Revenue), and automated workflows with Airflow in Docker. Provisioned GCP infrastructure using Terraform</p>
+							<p><strong>Technologies:</strong> Airflow, Docker, Terraform, dbt, GCP, Metabase </p>
+							<a href="https://github.com/johadamas/gcp-e2e-pipeline.git" target="_blank">
+								<button type="button">View on GitHub</button>
+							</a>
+
+							<hr> <!-- Separator -->
+
+							<h2 class="major">Data Engineering</h2>
+							<div class="slider" id="slider2">
+								<div class="slides">
+									<img src="images/DE2_etl_extract.gif" alt="Extract data" class="slide">
+									<img src="images/DE2_etl_transform.gif" alt="Transform data" class="slide">
+									<img src="images/DE2_etl_load.gif" alt="Load Delta" class="slide">
+									<img src="images/DE2_pbi_dashboard.gif" alt="Dashboard" class="slide">
+									<img src="images/DE2_main_infra.png" alt="Architecture" class="slide">
+									<!-- Add more images as needed -->
+								</div>
+								<button class="prev" onclick="plusSlides(-1, 'slider2')">&#10094;</button>
+								<button class="next" onclick="plusSlides(1, 'slider2')">&#10095;</button>
+							</div>
+							<p><b>Integrated Databricks ETL Pipeline and Azure CI/CD Deployment (Part 1)</b></p>
+							
+							<p style="text-align: justify;">Developed an ETL pipeline to efficiently process batch data using Databricks Auto Loader within the Medallion Architecture. Terraform automates full infrastructure provisioning (Storage, Databricks, Key Vault), while Airflow simulates batch data processing. Power BI is used to visualize and analyze data from the Gold layer stored in Delta tables within Databricks using the JDBC/ODBC connector</p>
+							<p><strong>Technologies:</strong> Airflow, Azure, Terraform, Databricks, Power BI</p>
+							<a href="https://github.com/johadamas/coffeeshop-e2e-pipeline.git" target="_blank">
+								<button type="button">View on GitHub</button>
+							</a>
+
+							<hr> <!-- Separator -->
+
+							<h2 class="major">Data Engineering</h2>
+							<div class="slider" id="slider3">
+								<div class="slides">
+									<img src="images/DE2_CI_pipeline.gif" alt="CI pipeline run" class="slide">
+									<img src="images/DE2_CD_pipeline.gif" alt="CD pipeline run" class="slide">
+									<img src="images/DE2_CD_pipeline_run.gif" alt="CD pipeline run progress" class="slide">
+									<img src="images/DE2_CICD_architecture.png" alt="CI/CD architecture" class="slide">
+									<img src="images/DE2_project_finish.png" alt="Project Completion" class="slide">
+									<!-- Add more images as needed -->
+								</div>
+								<button class="prev" onclick="plusSlides(-1, 'slider3')">&#10094;</button>
+								<button class="next" onclick="plusSlides(1, 'slider3')">&#10095;</button>
+							</div>
+							<p><b>Integrated Databricks ETL Pipeline and Azure CI/CD Deployment (Part 2)</b></p>
+							
+							<p style="text-align: justify;">This project extends my previously developed Databricks ETL Pipeline with Auto Loader by integrating Azure DevOps CI/CD to automate Terraform and Databricks notebook deployments. The GIF above shows how a simple edit to README.md triggers both the Build (CI) and Release (CD) pipelines, ensuring seamless deployment and infrastructure consistency</p>
+							<p><strong>Technologies:</strong> GitHub, Azure DevOps, Terraform</p>
+							<a href="https://github.com/johadamas/azure-e2e-dataops.git" target="_blank">
+								<button type="button">View on GitHub</button>
+							</a>
+
+							<hr> <!-- Separator -->
+
+							<h2 class="major">Machine Learning</h2>
+							<div class="slider" id="slider4">
+								<div class="slides">
+									<img src="images/ML1_app.gif" alt="Streamlit App" class="slide">
+									<img src="images/ML1_architecture.png" alt="Architecture" class="slide">
+									<img src="images/ML1_scraping.gif" alt="Web Scraping" class="slide">
+									<img src="images/ML1_barchart.png" alt="Barchart" class="slide">
+									<img src="images/ML1_scatter.png" alt="Scatter" class="slide">
+									<img src="images/ML1_heatmap.png" alt="Heatmap" class="slide">
+									<!-- Add more images as needed -->
+								</div>
+								<button class="prev" onclick="plusSlides(-1, 'slider4')">&#10094;</button>
+								<button class="next" onclick="plusSlides(1, 'slider4')">&#10095;</button>
+							</div>
+							<p><b>Jakarta Housing Price Prediction ML App</b></p>
+							
+							<p style="text-align: justify;">Developed an end-to-end ML app for predicting Jakarta housing prices. Scraped 10,000+ property listings, performed data cleaning and transformation, and trained a high-accuracy Gradient Boosting Regressor model. Deployed the model in the Streamlit app for instant predictions</p>
+							<p><strong>Technologies:</strong> Pandas, Seaborn, Scikit-Learn, Streamlit</p>
+							<a href="https://github.com/johadamas/house-price-ml-app.git" target="_blank">
+								<button type="button">View on GitHub</button>
+							</a>
+
+							<hr> <!-- Separator -->
+
+							<h2 class="major">Data Analytics</h2>
+							<div class="slider" id="slider5">
+								<div class="slides">
+									<img src="images/DA1_notebook.gif" alt="Notebook run" class="slide">
+									<img src="images/DA1_dashboard.png" alt="Databricks Dashboard" class="slide">
+									<!-- Add more images as needed -->
+								</div>
+								<button class="prev" onclick="plusSlides(-1, 'slider5')">&#10094;</button>
+								<button class="next" onclick="plusSlides(1, 'slider5')">&#10095;</button>
+							</div>
+							<p><b>Olympic History Data Analysis with Pyspark</b></p>
+							
+							<p style="text-align: justify;">Conducted exploratory data analysis (EDA) on the Olympic dataset from Kaggle using PySpark in a Databricks notebook. Analyzed historical trends in medal distribution, athlete performance, and country participation. Additionally, created a Databricks dashboard to visualize key insights</p>
+							<p><strong>Technologies:</strong> Databricks, Pyspark</p>
+							<a href="https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3584113975543867/1749387502129335/5462809743132410/latest.html" target="_blank">
+								<button type="button">View Notebook</button>
+							</a>
+						
+							<hr> <!-- Separator -->
+
+							<h2 class="major">Data Engineering</h2>
+							<div class="slider" id="slider6">
+								<div class="slides">
+									<img src="images/DE3_dashboard.gif" alt="PBI Dashboard" class="slide">
+									<img src="images/DE3_erd.png" alt="PBI Tables" class="slide">
+									<img src="images/DE3_synapse_pipeline.png" alt="Synapse Pipeline" class="slide">
+									<img src="images/DE3_adf_pipeline.png" alt="Data Factory Pipeline" class="slide">
+									<img src="images/DE3_architecture.png" alt="Project Architecture" class="slide">
+									<!-- Add more images as needed -->
+								</div>
+								<button class="prev" onclick="plusSlides(-1, 'slider6')">&#10094;</button>
+								<button class="next" onclick="plusSlides(1, 'slider6')">&#10095;</button>
+							</div>
+							<p><b>End-to-End Azure ETL Pipeline with Terraform</b></p>
+							
+							<p style="text-align: justify;">Built an ETL pipeline to extract 56K+ records from SQL Server using Azure Data Factory, store in ADLS Gen2, and transform via Databricks (Medallion Architecture). Created views in Synapse (serverless SQL pool) for gold-layer tables, connected to Power BI for reporting, secured credentials with Key Vault, and provisioned core Azure resources with Terraform</p>
+							<p><strong>Technologies:</strong> Terraform, SQL Server, SSMS, Azure, Power BI</p>
+							<a href="https://github.com/johadamas/azure-e2e-pipeline.git" target="_blank">
+								<button type="button">View on GitHub</button>
+							</a>
+						
+						</article>
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">Meet Jonathan!</h2>
+								<span class="image main"><img src="images/IMG_6479_copy.JPG" alt="Jonathan Hadamas" /></span>
+								
+								<p>
+									Data Engineering Enthusiast with a background in Human Resources, skilled in <strong>Python, SQL, and cloud platforms (Azure & GCP)</strong>. Experienced in designing <strong>ETL/ELT pipelines, data modeling, and cloud automation</strong> using <strong>Airflow, dbt, Terraform, and Databricks</strong>. Passionate about transforming raw data into insights, with expertise in <strong>data ingestion, transformation, and visualization</strong> using <strong>Power BI and Metabase</strong>  
+								</p>
+								<ul>
+									<li><strong>Certified:</strong> Azure Data Engineer Associate, Power BI Data Analyst Associate</li>
+									<li><strong>Technologies:</strong> Airflow, dbt, Terraform, Azure, GCP, Power BI, Databricks</li>
+								</ul>
+							
+								<!-- Download Resume Button -->
+								<a href="images/Jonathan_Hadamas_Resume_2025.pdf" download="Jonathan_Hadamas_Resume.pdf">
+									<button type="button" class="primary">Download Resume</button>
+								</a>
+							</article>
+						
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Let's Connect!</h2>
+								<p style="text-align: justify;">Whether you have questions about my projects, want to collaborate on new ventures, or discuss the latest in data analytics and cloud computing, I'm here to connect🧋</p>
+								
+								<p>Feel free to reach out to me anytime through the following channels:</p>
+								<ul class="contact-info">
+									<li><i class="fas fa-phone-alt"></i> +62-822-4338-0580</li>
+									<li><i class="fas fa-envelope"></i> johadamas13@gmail.com</li>
+									<li><i class="fas fa-map-marker-alt"></i> South Jakarta, Indonesia</li>
+								</ul>
+								<!-- <ul class="icons">
+									<li><a href="https://github.com/johadamas" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/johadamas/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://wa.me/6282243380580" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+									<li><a href="mailto:johadamas13@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+								</ul> -->
+							</article>
+
+						<!-- Elements -->
+							<article id="elements">
+								<h2 class="major">Elements</h2>
+
+								<section>
+									<h3 class="major">Text</h3>
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+									<h4>Blockquote</h4>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h4>Preformatted</h4>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Table</h3>
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3 class="major">Buttons</h3>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h3 class="major">Form</h3>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</section>
+
+							</article>
+
+					</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<!-- <p>&copy; 2025 Jonathan Hadamas. All Rights Reserved.</p> -->
+				<!-- <p>Designed and developed by Jonathan Hadamas</p> -->
+				<ul class="icons">
+					<li><a href="https://github.com/johadamas" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/johadamas" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://wa.me/6282243380580" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+					<li><a href="mailto:johadamas13@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+			</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<!-- Add your JavaScript here -->
+			<script>
+				function plusSlides(n, sliderId) {
+					showSlides(slideIndex[sliderId] += n, sliderId);
+				}
+				
+				function showSlides(n, sliderId) {
+					let slides = document.querySelectorAll(`#${sliderId} .slide`);
+					if (n >= slides.length) {
+						slideIndex[sliderId] = 0;
+					}
+					if (n < 0) {
+						slideIndex[sliderId] = slides.length - 1;
+					}
+					for (let i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";
+					}
+					slides[slideIndex[sliderId]].style.display = "block";
+				}
+				
+				// Initialize slide indices for each slider
+				let slideIndex = {
+					'slider1': 0,
+					'slider2': 0, 
+					'slider3': 0, 
+					'slider4': 0, 
+					'slider5': 0, 
+					'slider6': 0
+				};
+				
+				// Show the first slides
+				showSlides(slideIndex['slider1'], 'slider1');
+				showSlides(slideIndex['slider2'], 'slider2');
+				showSlides(slideIndex['slider3'], 'slider3');
+				showSlides(slideIndex['slider4'], 'slider4');
+				showSlides(slideIndex['slider5'], 'slider5');
+				showSlides(slideIndex['slider6'], 'slider6');
+			</script>
+	</body>
+</html>
